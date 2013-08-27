@@ -114,7 +114,7 @@ function VaEn(x, y, z, f)
         Orientation(3)
       
       end
-      avance()
+      Avance()
     until x == XAct
   end
   -- Traitement de l'ecart Z
@@ -128,7 +128,7 @@ function VaEn(x, y, z, f)
         Orientation(0)
         
       end
-      avance()
+      Avance()
     until z == ZAct
   end
   -- Traitement de l'ecart Y
