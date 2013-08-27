@@ -107,11 +107,11 @@ function VaEn(x, y, z, f)
   if XEcart ~= 0 then
     repeat
       if XEcart < 0 then
-        Orientation("w")
+        Orientation(1)
         
       end
       if XEcart > 0 then
-        Orientation("e")
+        Orientation(3)
       
       end
       avance()
@@ -121,11 +121,11 @@ function VaEn(x, y, z, f)
   if ZEcart ~= 0 then
     repeat
       if ZEcart < 0 then
-        Orientation("n")
+        Orientation(2)
         
       end
       if ZEcart > 0 then
-        Orientation("s")
+        Orientation(0)
         
       end
       avance()
