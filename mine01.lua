@@ -145,7 +145,7 @@ function VaEn(x, y, z, f)
 end
 
 VaEn(754, 250, 369, 2)
-VaEn(749, 115, 351, 0)
+VaEn(749, 116, 351, 0)
 VaEn(754, 250, 369, 2)
 --VaEn(524, 105, 708, 3)
 VaEn(XOri, YOri, ZOri, FOri)
