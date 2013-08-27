@@ -88,6 +88,15 @@ function Avance()
   
 end
 
+function Orientation(f)
+  -- modification de l'orientation vers f
+  if f ~= FAct then
+    repeat
+      Gauche()
+    until FAct == f
+  end
+end
+
 function VaEn(x, y, z, f)
   -- Mouvement sur le plan horizontal
   -- Determination de l'orientation a avoir
@@ -96,11 +105,31 @@ function VaEn(x, y, z, f)
   ZEcart = z - ZAct
   -- Traitement de l'ecart X
   if XEcart ~= 0 then
-  
+    repeat
+      if XEcart < 0 then
+        Orientation("w")
+        
+      end
+      if XEcart > 0 then
+        Orientation("e")
+      
+      end
+      avance()
+    until x == XAct
   end
   -- Traitement de l'ecart Z
   if ZEcart ~= 0 then
-  
+    repeat
+      if ZEcart < 0 then
+        Orientation("n")
+        
+      end
+      if ZEcart > 0 then
+        Orientation("s")
+        
+      end
+      avance()
+    until z == ZAct
   end
   -- Traitement de l'ecart Y
   if YEcart ~= 0 then
