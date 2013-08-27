@@ -94,9 +94,9 @@ function VaEn(x, y, z, f)
   XEcart = x - XAct
   YEcart = y - YAct
   ZEcart = z - ZAct
-  term.print(XEcart)
-  term.print(YEcart)
-  term.print(ZEcart)
+  print(XEcart)
+  print(YEcart)
+  print(ZEcart)
 end
 
 VaEn(754, 250, 369, 2)
