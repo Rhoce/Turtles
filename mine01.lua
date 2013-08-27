@@ -22,33 +22,70 @@ ZAct = 379
 FAct = 2
 
 function Haut()
--- Monte d'un bloc
-
+  -- Monte d'un bloc
+  if turtle.detectUp() = false then
+    turtle.up()
+    YAct = YAct + 1
+    return true
+  else
+    return false
+  end
+  
 end
 
 function Bas()
--- Descend d'un bloc
-
+  -- Descend d'un bloc
+  if turtle.detectDown() = false then
+    turtle.down()
+    YAct = YAct - 1
+    return true
+  else
+    return false
+  end
+  
 end
 
 function Gauche()
--- Tourne de 90 degres sur la gauche
-
+  -- Tourne de 90 degres sur la gauche
+  turtle.turnLeft()
+  FAct = FAct - 1
+  if FAct = -1 then 
+    FAct = 3
+  end
+  
 end
 
 function Droite()
--- Tourne de 90 degres sur la droite
-
+  -- Tourne de 90 degres sur la droite
+  turtle.turnRight()
+  FAct = Fact + 1
+  if FAct = 4 then
+    FAct = 0
+  end
+  
 end
 
 function Avance()
--- Avance d'un bloc
-
+  -- Avance d'un bloc
+  if turtle.detect() = false then
+    turtle.forward
+    if FAct = 0 then
+    
+    end
+    if FAct = 1 then
+    
+    end
+    if FAct = 2 then
+    
+    end
+    if FAct = 3 then
+    
+    end
 end
 
 function VaEn(x, y, z, f)
--- Mouvement sur le plan horizontal
--- Determination de l'orientation à avoir
+  -- Mouvement sur le plan horizontal
+  -- Determination de l'orientation a avoir
 
 end
 
