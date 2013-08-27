@@ -68,7 +68,7 @@ end
 function Avance()
   -- Avance d'un bloc
   if turtle.detect() == false then
-    turtle.forward
+    turtle.forward()
     if FAct == 0 then
       ZAct = ZAct + 1
     end
