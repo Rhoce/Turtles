@@ -70,17 +70,22 @@ function Avance()
   if turtle.detect() = false then
     turtle.forward
     if FAct = 0 then
-    
+      ZAct = ZAct + 1
     end
     if FAct = 1 then
-    
+      XAct = XAct - 1
     end
     if FAct = 2 then
-    
+      ZAct = ZAct - 1
     end
     if FAct = 3 then
-    
+      XAct = XAct + 1
     end
+    return true
+  else
+    return false
+  end
+  
 end
 
 function VaEn(x, y, z, f)
