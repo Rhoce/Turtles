@@ -1,1 +1,2 @@
 -- mine01
+-- Premier test de minage par turtle
