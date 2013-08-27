@@ -113,6 +113,7 @@ function VaEn(x, y, z, f)
         Orientation(3)
       end
       Avance()
+      print("x:"..XAct.." y:"..YAct.." z:"..ZAct)
     until x == XAct
   end
   -- Traitement de l'ecart Z
@@ -125,6 +126,7 @@ function VaEn(x, y, z, f)
         Orientation(0)
       end
       Avance()
+      print("x:"..XAct.." y:"..YAct.." z:"..ZAct)
     until z == ZAct
   end
   -- Traitement de l'ecart Y
@@ -136,11 +138,14 @@ function VaEn(x, y, z, f)
       if YEcart < 0 then
         Bas()
       end
+      print("x:"..XAct.." y:"..YAct.." z:"..ZAct)
     until y == YAct
   end
   Orientation(f)
 end
 
 VaEn(754, 250, 369, 2)
-VaEn(524, 105, 708, 3)
+VaEn(749, 115, 351, 0)
+VaEn(754, 250, 369. 2)
+--VaEn(524, 105, 708, 3)
 VaEn(XOri, YOri, ZOri, FOri)
