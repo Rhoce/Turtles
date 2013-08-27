@@ -94,6 +94,18 @@ function VaEn(x, y, z, f)
   XEcart = x - XAct
   YEcart = y - YAct
   ZEcart = z - ZAct
+  -- Traitement de l'ecart X
+  if XEcart ~= 0 then
+  
+  end
+  -- Traitement de l'ecart Z
+  if ZEcart ~= 0 then
+  
+  end
+  -- Traitement de l'ecart Y
+  if YEcart ~= 0 then
+  
+  end
   print(XEcart)
   print(YEcart)
   print(ZEcart)
