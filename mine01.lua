@@ -108,11 +108,9 @@ function VaEn(x, y, z, f)
     repeat
       if XEcart < 0 then
         Orientation(1)
-        
       end
       if XEcart > 0 then
         Orientation(3)
-      
       end
       Avance()
     until x == XAct
@@ -122,22 +120,27 @@ function VaEn(x, y, z, f)
     repeat
       if ZEcart < 0 then
         Orientation(2)
-        
       end
       if ZEcart > 0 then
         Orientation(0)
-        
       end
       Avance()
     until z == ZAct
   end
   -- Traitement de l'ecart Y
   if YEcart ~= 0 then
-  
+    repeat
+      if YEcart > 0 then
+        Haut()
+      end
+      if YEcart < 0 then
+        Bas()
+      end
+    until y == YAct
   end
-  print(XEcart)
-  print(YEcart)
-  print(ZEcart)
+  Orientation(f)
 end
 
 VaEn(754, 250, 369, 2)
+VaEn(524, 105, 708, 3)
+VaEn(XOri, YOri, ZOri, FOri)
