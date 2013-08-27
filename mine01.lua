@@ -5,7 +5,7 @@
 
 -- Position de depart de la tortue
 XOri = 754
-YOri = 107
+YOri = 108
 ZOri = 379
 FOri = 2
 
@@ -17,7 +17,7 @@ FDes = 3
 
 --- Position actuelle de la tortue
 XAct = 754
-YAct = 107
+YAct = 108
 ZAct = 379
 FAct = 2
 
