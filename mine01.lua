@@ -1,7 +1,7 @@
 -- mine01
 -- Premier test de minage par turtle
 
--- Orientation 0:South 1:West 2:North 3:East
+-- Orientation 0:South(Z+) 1:West(X-) 2:North(Z-) 3:East(X+)
 
 -- Position de depart de la tortue
 XOri = 754
@@ -91,7 +91,12 @@ end
 function VaEn(x, y, z, f)
   -- Mouvement sur le plan horizontal
   -- Determination de l'orientation a avoir
-
+  XEcart = x - XAct
+  YEcart = y - YAct
+  ZEcart = z - ZAct
+  print XEcart
+  print YEcart
+  print ZEcart
 end
 
 VaEn(754, 250, 369, 2)
