@@ -23,7 +23,7 @@ FAct = 2
 
 function Haut()
   -- Monte d'un bloc
-  if turtle.detectUp() = false then
+  if turtle.detectUp() == false then
     turtle.up()
     YAct = YAct + 1
     return true
@@ -35,7 +35,7 @@ end
 
 function Bas()
   -- Descend d'un bloc
-  if turtle.detectDown() = false then
+  if turtle.detectDown() == false then
     turtle.down()
     YAct = YAct - 1
     return true
@@ -49,7 +49,7 @@ function Gauche()
   -- Tourne de 90 degres sur la gauche
   turtle.turnLeft()
   FAct = FAct - 1
-  if FAct = -1 then 
+  if FAct == -1 then 
     FAct = 3
   end
   
@@ -59,7 +59,7 @@ function Droite()
   -- Tourne de 90 degres sur la droite
   turtle.turnRight()
   FAct = Fact + 1
-  if FAct = 4 then
+  if FAct == 4 then
     FAct = 0
   end
   
@@ -69,16 +69,16 @@ function Avance()
   -- Avance d'un bloc
   if turtle.detect() = false then
     turtle.forward
-    if FAct = 0 then
+    if FAct == 0 then
       ZAct = ZAct + 1
     end
-    if FAct = 1 then
+    if FAct == 1 then
       XAct = XAct - 1
     end
-    if FAct = 2 then
+    if FAct == 2 then
       ZAct = ZAct - 1
     end
-    if FAct = 3 then
+    if FAct == 3 then
       XAct = XAct + 1
     end
     return true
